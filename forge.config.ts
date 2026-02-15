@@ -14,8 +14,8 @@ import { FuseV1Options, FuseVersion } from "@electron/fuses";
 
 const STRINGS = {
   author: "Revolt Platforms LTD",
-  name: "Stoat",
-  execName: "stoat-desktop",
+  name: "Echohaus-Stoat",
+  execName: "echohaus-stoat-desktop",
   description: "Open source user-first chat platform.",
 };
 

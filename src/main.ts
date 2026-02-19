@@ -36,7 +36,8 @@ const onNotifyUser = (_info: IUpdateInfo) => {
 
 if (acquiredLock) {
   // start auto update logic
-  updateElectronApp({ onNotifyUser });
+  // Disabled for echohaus
+  // updateElectronApp({ onNotifyUser });
 
   // create and configure the app when electron is ready
   app.on("ready", () => {

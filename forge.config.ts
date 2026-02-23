@@ -54,7 +54,7 @@ if (!process.env.PLATFORM) {
     // this is just for testing purposes
     new MakerFlatpak({
       options: {
-        id: "chat.stoat.stoat-desktop",
+        id: "chat.stoat.echohaus-stoat-desktop",
         description: STRINGS.description,
         productName: STRINGS.name,
         productDescription: STRINGS.description,

@@ -85,8 +85,9 @@ if (!process.env.PLATFORM) {
           // default arguments found by running
           // DEBUG=electron-installer-flatpak* pnpm make
           "--socket=fallback-x11",
+          "--socket=wayland",
           "--share=ipc",
-          "--device=dri",
+          "--device=all",
           "--socket=pulseaudio",
           "--filesystem=home",
           "--env=TMPDIR=/var/tmp",
@@ -94,6 +95,8 @@ if (!process.env.PLATFORM) {
           "--talk-name=org.freedesktop.Notifications",
           // add Unity talk name for badges
           "--talk-name=com.canonical.Unity",
+          "--talk-name=org.kde.StatusNotifierWatcher",
+          "--env=XCURSOR_PATH=/run/host/user-share/icons:/run/host/share/icons",
         ],
         // files: [
         //   // is this necessary?

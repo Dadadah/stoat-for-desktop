@@ -189,6 +189,59 @@ export function createMainWindow() {
     }
   });
 
+  // Create display media request handler
+  session.defaultSession.setDisplayMediaRequestHandler(
+    (request, callback) => {
+      desktopCapturer
+        .getSources({ types: ["screen", "window"], fetchWindowIcons: true })
+        .then((sources) => {
+          // Shortcut for linux wayland.
+          if (sources.length == 1) {
+            // TODO: Get audio to work with wayland
+            // See vencord for an implementation using a virtual microphone.
+            callback({
+              video: sources[0],
+              audio: request.audioRequested ? "loopback" : undefined,
+            });
+            return;
+          }
+          ipcMain.once(
+            "screenPickerCallback",
+            (_, idx: number, audio: boolean) => {
+              if (idx < 0 || idx > sources.length) {
+                callback({});
+              } else {
+                callback({
+                  video: sources[idx],
+                  audio: audio ? "loopback" : undefined,
+                });
+              }
+            },
+          );
+          mainWindow.webContents.send(
+            "screenPicker",
+            sources.map((source, idx) => {
+              const image = source.appIcon;
+              if (image) {
+                if (image.getAspectRatio() > 1) {
+                  image.resize({ width: 256 });
+                } else {
+                  image.resize({ height: 256 });
+                }
+              }
+              return {
+                idx: idx,
+                name: source.name,
+                isFullScreen: source.id.startsWith("screen"),
+                image: image?.toDataURL(),
+              };
+            }),
+          );
+        });
+    },
+    { useSystemPicker: true },
+  );
+
   // push world events to the window
   ipcMain.on("minimise", () => mainWindow.minimize());
   ipcMain.on("maximise", () =>

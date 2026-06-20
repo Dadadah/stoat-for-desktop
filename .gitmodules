@@ -1,6 +1,6 @@
 [submodule "assets"]
 	path = assets
-	url = https://github.com/stoatchat/assets
+	url = https://github.com/dadadah/echohaus-stoat-assets
 	update = none
 [submodule "node-pipewire"]
 	path = node-pipewire

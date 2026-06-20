@@ -1,6 +1,6 @@
 {
-  "name": "stoat-desktop",
-  "productName": "stoat-desktop",
+  "name": "echohaus-stoat-desktop",
+  "productName": "echohaus-stoat-desktop",
   "version": "1.4.2",
   "main": ".vite/build/main.js",
   "repository": "stoatchat/desktop",
@@ -13,8 +13,8 @@
     "lint:fix": "eslint --ext --fix .ts,.tsx .",
     "fmt": "prettier --check 'src/**/*.{ts,tsx,json}'",
     "fmt:fix": "prettier --write 'src/**/*.{ts,tsx,json}'",
-    "install:flatpak": "flatpak --user install out/make/flatpak/x86_64/chat.stoat.StoatDesktop_stable_x86_64.flatpak",
-    "run:flatpak": "flatpak run --socket=session-bus chat.stoat.StoatDesktop",
+    "install:flatpak": "flatpak --user install out/make/flatpak/x86_64/us.echoha.stoat_stable_x86_64.flatpak",
+    "run:flatpak": "flatpak run --socket=session-bus us.echoha.stoat",
     "run:nix": "/usr/bin/env electron-nix ."
   },
   "keywords": [],

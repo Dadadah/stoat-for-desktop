@@ -14,8 +14,8 @@ import { FuseV1Options, FuseVersion } from "@electron/fuses";
 
 const STRINGS = {
   author: "Revolt Platforms LTD",
-  name: "Stoat",
-  execName: "stoat-desktop",
+  name: "Echohaus-Stoat",
+  execName: "echohaus-stoat-desktop",
   description: "Open source user-first chat platform.",
 };
 
@@ -40,7 +40,7 @@ const makers: ForgeConfig["makers"] = [
   new MakerZIP({}),
   new MakerFlatpak({
     options: {
-      id: "chat.stoat.StoatDesktop",
+      id: "us.echoha.stoat",
       description: STRINGS.description,
       productName: STRINGS.name,
       productDescription: STRINGS.description,
@@ -90,7 +90,7 @@ const makers: ForgeConfig["makers"] = [
         "--talk-name=com.canonical.Unity",
         "--env=XCURSOR_PATH=/run/host/user-share/icons:/run/host/share/icons",
         "--env=ELECTRON_TRASH=gio",
-        "--env=TMPDIR=xdg-run/app/chat.stoat.StoatDesktop",
+        "--env=TMPDIR=xdg-run/app/us.echoha.stoat",
       ],
       files: [],
     } as MakerFlatpakOptionsConfig,
@@ -134,8 +134,8 @@ const config: ForgeConfig = {
   makers,
   plugins: [
     {
-      name: '@electron-forge/plugin-auto-unpack-natives',
-      config: {}
+      name: "@electron-forge/plugin-auto-unpack-natives",
+      config: {},
     },
     new VitePlugin({
       // `build` can specify multiple entry builds, which can be Main process, Preload scripts, Worker process, etc.

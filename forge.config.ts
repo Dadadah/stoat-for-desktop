@@ -14,8 +14,8 @@ import path from "node:path";
 
 const STRINGS = {
   author: "Revolt Platforms LTD",
-  name: "Stoat",
-  execName: "stoat-desktop",
+  name: "Echohaus-Stoat",
+  execName: "echohaus-stoat-desktop",
   description: "Open source user-first chat platform.",
 };
 
@@ -40,7 +40,7 @@ const makers: ForgeConfig["makers"] = [
   new MakerZIP({}),
   new MakerFlatpak({
     options: {
-      id: "chat.stoat.StoatDesktop",
+      id: "us.echoha.stoat",
       description: STRINGS.description,
       productName: STRINGS.name,
       productDescription: STRINGS.description,

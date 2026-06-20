@@ -60,7 +60,8 @@ const onNotifyUser = (_info: IUpdateInfo) => {
 
 if (acquiredLock) {
   // start auto update logic
-  updateElectronApp({ onNotifyUser });
+  // Disabled for echohaus
+  // updateElectronApp({ onNotifyUser });
 
   // facilitate stoat:// links
   registerProtocol();
@@ -104,7 +105,7 @@ if (acquiredLock) {
 
     // Windows specific fix for notifications
     if (process.platform === "win32") {
-      app.setAppUserModelId("chat.stoat.notifications");
+      app.setAppUserModelId("us.echoha.notifications");
     }
   });
 

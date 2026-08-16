@@ -7,6 +7,9 @@ settings:
 overrides:
   yauzl: ^3.3.1
 
+patchedDependencies:
+  cross-zip@4.0.1: c84ce0fea8972ae1f3b81814b7538f7a21639a93a130b26a556eb35dd3123e80
+
 importers:
 
   .:
@@ -4136,7 +4139,7 @@ snapshots:
     dependencies:
       '@electron-forge/maker-base': 7.11.2(bluebird@3.7.2)(supports-color@8.1.1)
       '@electron-forge/shared-types': 7.11.2(bluebird@3.7.2)(supports-color@8.1.1)
-      cross-zip: 4.0.1
+      cross-zip: 4.0.1(patch_hash=c84ce0fea8972ae1f3b81814b7538f7a21639a93a130b26a556eb35dd3123e80)
       fs-extra: 10.1.0
       got: 11.8.6
     transitivePeerDependencies:
@@ -5705,7 +5708,7 @@ snapshots:
       shebang-command: 2.0.0
       which: 2.0.2
 
-  cross-zip@4.0.1: {}
+  cross-zip@4.0.1(patch_hash=c84ce0fea8972ae1f3b81814b7538f7a21639a93a130b26a556eb35dd3123e80): {}
 
   data-view-buffer@1.0.2:
     dependencies:

@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.5.3](https://github.com/Dadadah/stoat-for-desktop/compare/v1.5.2...v1.5.3) (2026-08-16)
+
+
+### Bug Fixes
+
+* Patch cross-zip to fix dumb bug ([19585fa](https://github.com/Dadadah/stoat-for-desktop/commit/19585fa64d7efa6d4603c250858883ca8a635576))
+* Patch cross-zip to fix dumb bug ([7bf1bb3](https://github.com/Dadadah/stoat-for-desktop/commit/7bf1bb3ddcf452bce1e8d590b23be60a4bd56a6a))
+
 ## [1.5.2](https://github.com/Dadadah/stoat-for-desktop/compare/v1.5.1...v1.5.2) (2026-08-16)
 
 

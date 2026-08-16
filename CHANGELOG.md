@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.5.1](https://github.com/dadadah/stoat-for-desktop/compare/v1.5.0...v1.5.1) (2026-08-16)
+
+
+### Bug Fixes
+
+* Release please failed to add a remote ([31ba1d6](https://github.com/dadadah/stoat-for-desktop/commit/31ba1d606e62177e1a307fbd661bbe3017f5a80b))
+* Release please failed to add a remote ([38ca882](https://github.com/dadadah/stoat-for-desktop/commit/38ca882638ecc2813de593c8e1ee630cea1e05c3))
+
 ## [1.5.0](https://github.com/stoatchat/for-desktop/compare/v1.4.2...v1.5.0) (2026-08-16)
 
 

@@ -78,6 +78,7 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
+          # TODO: Figure out why 26 fails?
           node-version: 24
           cache: "pnpm"
 
@@ -106,10 +107,10 @@ jobs:
   build-appimage:
     needs: [release-please, publish-release]
     if: needs.release-please.outputs.release_created == 'true'
-    runs-on: ${{ matrix.runs-on }}
+    runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        runs-on: [ubuntu-latest, ubuntu-24.04-arm]
+        os: [ubuntu-latest, ubuntu-24.04-arm]
     container: ghcr.io/pkgforge-dev/archlinux:latest
 
     steps:

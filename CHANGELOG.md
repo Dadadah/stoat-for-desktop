@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.5.2](https://github.com/Dadadah/stoat-for-desktop/compare/v1.5.1...v1.5.2) (2026-08-16)
+
+
+### Bug Fixes
+
+* try to fix rp publishing ([14cf360](https://github.com/Dadadah/stoat-for-desktop/commit/14cf36051fb124e5d29ec81b06819a4508ca8093))
+* try to fix rp publishing ([111cd5d](https://github.com/Dadadah/stoat-for-desktop/commit/111cd5de94e37a0289b4d63faa3aea53b21aeb8c))
+
 ## [1.5.1](https://github.com/dadadah/stoat-for-desktop/compare/v1.5.0...v1.5.1) (2026-08-16)
 
 

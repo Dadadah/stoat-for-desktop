@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.5.6](https://github.com/Dadadah/stoat-for-desktop/compare/v1.5.5...v1.5.6) (2026-08-16)
+
+
+### Bug Fixes
+
+* Remove custom patch on cross-zip ([0fa0555](https://github.com/Dadadah/stoat-for-desktop/commit/0fa05551478a4ed98e8361f63a326ba3b41718d0))
+* Remove custom patch on cross-zip ([b8ca7da](https://github.com/Dadadah/stoat-for-desktop/commit/b8ca7da4774ebdaf7c68a5a1cb7798b96026b31f))
+
 ## [1.5.5](https://github.com/Dadadah/stoat-for-desktop/compare/v1.5.4...v1.5.5) (2026-08-16)
 
 

@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.5.7](https://github.com/Dadadah/stoat-for-desktop/compare/v1.5.6...v1.5.7) (2026-08-16)
+
+
+### Bug Fixes
+
+* Add v to release version i guess ([c8ee1cd](https://github.com/Dadadah/stoat-for-desktop/commit/c8ee1cd6fb095c1d88c53135c1619c4077937d53))
+* Add v to release version i guess ([a990b13](https://github.com/Dadadah/stoat-for-desktop/commit/a990b132f4957ac64efdc0ce59a438ab66dc7dfd))
+
 ## [1.5.6](https://github.com/Dadadah/stoat-for-desktop/compare/v1.5.5...v1.5.6) (2026-08-16)
 
 

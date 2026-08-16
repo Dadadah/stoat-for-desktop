@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.5.5](https://github.com/Dadadah/stoat-for-desktop/compare/v1.5.4...v1.5.5) (2026-08-16)
+
+
+### Bug Fixes
+
+* Use correct matrix in the runner ([3c3a711](https://github.com/Dadadah/stoat-for-desktop/commit/3c3a7114a3e8986ce78cff30c531532508ac7375))
+* Use correct matrix in the runner ([ab6c2b8](https://github.com/Dadadah/stoat-for-desktop/commit/ab6c2b8b5b6c6552856b0c1860bacfd0cdc4f564))
+
 ## [1.5.4](https://github.com/Dadadah/stoat-for-desktop/compare/v1.5.3...v1.5.4) (2026-08-16)
 
 

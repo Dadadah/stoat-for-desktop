@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.5.8](https://github.com/Dadadah/stoat-for-desktop/compare/v1.5.7...v1.5.8) (2026-08-16)
+
+
+### Bug Fixes
+
+* Upload zsync files too ([3e86df9](https://github.com/Dadadah/stoat-for-desktop/commit/3e86df9a0e7e12ec19c8dafe97ed5cdff136c6f3))
+* Upload zsync files too ([534cacd](https://github.com/Dadadah/stoat-for-desktop/commit/534cacdc39bf2fc1c1d7d08529fb2aed6667822a))
+
 ## [1.5.7](https://github.com/Dadadah/stoat-for-desktop/compare/v1.5.6...v1.5.7) (2026-08-16)
 
 

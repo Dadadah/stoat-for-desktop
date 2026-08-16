@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.5.4](https://github.com/Dadadah/stoat-for-desktop/compare/v1.5.3...v1.5.4) (2026-08-16)
+
+
+### Bug Fixes
+
+* Just downgrade node I guess ([1936575](https://github.com/Dadadah/stoat-for-desktop/commit/1936575e7ed186d31e712b253f5f4dd553ef160b))
+* Just downgrade node I guess ([f56d772](https://github.com/Dadadah/stoat-for-desktop/commit/f56d7723890c3b426dbba45dfe01e1e3733debfe))
+
 ## [1.5.3](https://github.com/Dadadah/stoat-for-desktop/compare/v1.5.2...v1.5.3) (2026-08-16)
 
 

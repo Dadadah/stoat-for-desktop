@@ -146,7 +146,7 @@ const config: ForgeConfig = {
   rebuildConfig: {},
   makers,
   hooks: {
-    packageAfterCopy: async (_, buildPath, platform) => {
+    packageAfterCopy: async (_config, buildPath, _version, platform) => {
       if (platform === "linux") {
         fs.cpSync(
           "node_modules/node-pipewire",

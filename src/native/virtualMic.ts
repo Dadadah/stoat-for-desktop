@@ -17,6 +17,9 @@ export const isWayland =
 ipcMain.handle("getIsWayland", () => isWayland);
 
 export async function initVirtualMic() {
+  // Only available on Wayland
+  if (!isWayland) return;
+
   try {
     const {
       createPwThread,
@@ -125,8 +128,6 @@ export async function initVirtualMic() {
       }
     }, 1000);
   } catch {
-    // Only available on Wayland
-    if (!isWayland) return;
     console.log(
       "node-pipewire failed to load. Screen share audio will not work on linux wayland.",
     );

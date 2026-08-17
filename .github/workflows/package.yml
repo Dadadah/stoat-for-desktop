@@ -21,7 +21,8 @@ jobs:
         run: mise assets
 
       - name: Install dependencies
-        run: mise install:frozen
+        # run: mise install:frozen
+        run: mise exec -- pnpm install
 
       - name: Package
         run: mise build

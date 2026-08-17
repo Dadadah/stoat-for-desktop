@@ -146,12 +146,14 @@ const config: ForgeConfig = {
   rebuildConfig: {},
   makers,
   hooks: {
-    packageAfterCopy: async (_, buildPath) => {
-      fs.cpSync(
-        "node_modules/node-pipewire",
-        path.join(buildPath, "node_modules/node-pipewire"),
-        { recursive: true },
-      );
+    packageAfterCopy: async (_, buildPath, platform) => {
+      if (platform === "linux") {
+        fs.cpSync(
+          "node_modules/node-pipewire",
+          path.join(buildPath, "node_modules/node-pipewire"),
+          { recursive: true },
+        );
+      }
     },
   },
   plugins: [

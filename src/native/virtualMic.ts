@@ -32,8 +32,6 @@ export async function initVirtualMic() {
       //@ts-ignore This module may not be found on non-linux builds.
     } = await import("node-pipewire"); //eslint-disable-line
 
-    console.log("node-pipewire loaded");
-
     createPwThread();
 
     // Wait for pipewire thread to start and gather neccessary data
